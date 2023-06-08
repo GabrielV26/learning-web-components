@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTAL DE NOTICÍAS GALACTICA</title>
-    <link rel="stylesheet" href="styles/card.css" >
+    <title>PORTAL DE NOTICÍAS</title>
+    <link rel="stylesheet" href="styles/card.css">
     <script src="src/Components/CardNews.js" defer></script>
+    <script src="src/Components/DynamicTitle.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="card_left">
-                <span>By Gabriel Leandro</span>
-                <h1> Restaurante da Família Mario contrata - Devs que saibam trabalhar com web components</h1>
-                <p>Onde a culinária encontra a web com paixão e criatividade! </p>
-            </div>
-            <div class="card_right">
-                <img src="assets/cozinha_da_familia_mario.PNG" alt="" srcset="">
-            </div>
-        </div>
-    </div>
-    <card-news></card-news>
+    <card-news 
+        auto="Gabriel"
+        title="Restaurante da Família Mario contrata - Devs que saibam trabalhar com web components"
+        link-url="https://www.google.com"
+        photo="assets/mario-family-kitchen.PNG"
+        content="Onde a culinária encontra a web com paixão e criatividade! "
+    >
+    </card-news>
+    <card-news 
+        title="Heróis se unem para derrotar vilão supremo."
+        link-url="https://www.google.com"
+        content="Eles perderam, salve-se quem puder!"
+    >
+    </card-news>
 </body>
 </html>
